@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
+body {
+  background-image: url(../estilo.css/estrellas.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Short Stack", cursive;
+}
+form {
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(1px); */
+
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+form > h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+}
+
+#usernameError {
+  color: white;
+}
+
+#passwordError {
+  color: white;
+}
+
+form > input {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #4595bd;
+  color: white;
+}
+
+form > input {
+  outline: none;
+  font-family: "Short Stack", cursive;
+  background: none;
+  border-radius: none;
+  cursor: default;
+}
+
+/*************************************************** MODIFICANDO EL BOTóN ******************************************/
+form > button {
+  font-family: "Short Stack", cursive;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  border-top-style: none;
+  border-right-style: none;
+}
+
+form > button {
+  cursor: pointer;
+  border-left-style: none;
+  border-bottom: none;
+  font-size: 22px;
+  color: white;
+  background-color: #4595bd;
+}
+
+form > button:hover {
+  width: 85%;
+  color: black;
+}
+
+/***************************************************RECORDAR CONTRASEÑA****************************************/
+
+.recordarContraseña {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 20px;
+  color: white;
+  /* cursor: pointer; */
+}

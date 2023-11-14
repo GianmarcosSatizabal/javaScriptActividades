@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+    <link rel="stylesheet" href="../formulario/estilo.css/formulario.css" />
+    <link rel="icon" href="/PrimeraPáginaWeb/imagenes/usuario.png" />
+  </head>
+  <body>
+    <!--Se agrego un id a la etiqueta-->
+    <form id="validadorFormulario">
+      <h1>Iniciar Sesión</h1>
+      <span id="usernameError" class="error"></span>
+      <input
+        id="username"
+        type="email"
+        autocomplete="off"
+        placeholder="Digite su nombre"
+      />
+      <span id="passwordError" class="error"></span>
+      <input id="password" type="password" placeholder="Digite su contrañesa" />
+      <span id="submit" class="error"></span>
+      <button type="submit" id="submit">Iniciar Sesión</button>
+
+      <div class="recordarContraseña">
+        <input type="checkbox" name="recordar" id="recordarContrasena" />
+        <label for="recordarContrasena">Recordar contraseña</label>
+        <!-- <span id="recordarError" class="error"></span> -->
+      </div>
+    </form>
+    <script src="script.js"></script>
+
+    <script>
+      const formulario = new ValidadorFormulario("validadorFormulario");
+    </script>
+  </body>
+</html>
